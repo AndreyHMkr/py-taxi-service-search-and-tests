@@ -14,9 +14,9 @@ class TestViews(TestCase):
         self.assertNotEqual(response.status_code, 200)
 
 
-class TestPrivetViews(TestCase):
+class TestPrivateViews(TestCase):
     def setUp(self):
-        self.user = get_user_model().objects.create(
+        self.user = get_user_model().objects.create_user(
             username="testuser",
             password="<PASSWORD>",
         )

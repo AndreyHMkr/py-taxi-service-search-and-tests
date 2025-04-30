@@ -14,7 +14,7 @@ class TestAdmin(TestCase):
         self.driver = get_user_model().objects.create_user(
             username="driver",
             password="testdriver",
-            license_number="123456",
+            license_number="AAA12345",
         )
 
     def test_driver_license_number_is_present(self):

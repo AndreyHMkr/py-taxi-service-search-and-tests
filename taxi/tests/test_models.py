@@ -41,7 +41,7 @@ class TestModels(TestCase):
     def test_create_driver_with_license_number(self):
         driver = Driver.objects.create(
             username="Driver 1",
-            license_number="123456",
+            license_number="AAA12345",
         )
         self.assertEqual(driver.username, "Driver 1")
-        self.assertEqual(driver.license_number, "123456")
+        self.assertEqual(driver.license_number, "AAA12345")

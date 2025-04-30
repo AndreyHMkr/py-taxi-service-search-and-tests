@@ -13,6 +13,5 @@ class DriverCreationFormTest(TestCase):
             "license_number": "UAA12345",
         }
         form = DriverCreationForm(data=form_data)
-        print(form.errors)
         self.assertTrue(form.is_valid())
         self.assertEqual(form.cleaned_data["username"], "admin")
